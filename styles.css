@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 40px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+
+.con {
+  line-height: 1.7;
+  margin-left:25px;
+}
+
+.intro {
+  font-size: 26px;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.spec {
+  font-size: 24px;
+  color: #333;
+}
+
+.wh {
+  font-size: 22px;
+}
+
+.deg {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.book-btn {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.but {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.but:hover {
+  background-color: #0056b3;
+}

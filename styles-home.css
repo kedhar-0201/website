@@ -1,0 +1,48 @@
+.header
+{
+  font-size:30px;
+  background-color: lightblue;
+  color: red;
+  margin-top: 0px;
+  height:70px;
+  padding-left:10px;
+  margin-bottom: 0PX;
+  
+}
+.qut{
+  font-size:50px;
+  font-weight: bold;
+  padding-left:50px;
+  color: blue;
+  margin-bottom:10px;
+}
+.par{
+  font-size:20px;
+  color:gray;
+  padding-left:50px;
+  padding-bottom:20px;
+  
+}
+.but{
+  background-color:blue;
+  color:white;
+  border-radius:5px;
+  margin-left: 50px;
+  font-size:20px;
+  border: none;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.but:hover
+{
+  cursor: pointer;
+  background-color:rgb(215, 129, 223);
+}
+.fac{
+  font-size:20px;
+  padding-left: 50px;
+
+}
