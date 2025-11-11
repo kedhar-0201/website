@@ -30,7 +30,8 @@
     }
 
     
-    .left-section {
+    
+    .right-section {
       display: flex;
       align-items: center;
       gap: 1.5rem;
@@ -39,26 +40,24 @@
     .logo {
       font-size: 1.6rem;
       font-weight: 700;
-      color:white ;
+      color:white;
       white-space: nowrap;
       letter-spacing: 0.5px;
     }
 
     nav a {
       text-decoration: none;
-      color: #1DA1F2;
+      color: black;
       font-weight: 500;
-      background-color: #ffffff;
+      background-color: white;
       padding: 0.5rem 1.1rem;
       border-radius: 20px;
       transition: all 0.3s ease;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-left: 0.8rem;
     }
 
-    nav a:hover {
-      background-color: #0d8de6;
-      color: #ffffff;
-    }
+   
 
     .search-bar {
       flex: 1;
@@ -91,21 +90,15 @@
         font-weight: 500;    
         white-space: nowrap;
         }
-
-    
     .container {
       max-width: 100%;
       padding: 2rem 2rem;
     }
-
-    
     .doctor-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
     }
-
-    
     .doctor-card {
       background: white;
       border-radius: 12px;
@@ -116,13 +109,10 @@
       flex-direction: column;
       height: 100%;
     }
-
     .doctor-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
-
-    
     .doctor-card img {
       width: 100%;
       height: 250px;
@@ -131,24 +121,20 @@
       padding: 10px;
       border-bottom: 1px solid #eee;
     }
-
     .doctor-info {
       padding: 1rem 1.2rem;
       flex: 1;
     }
-
     .doctor-info h2 {
       color: #1DA1F2;
       margin: 0.5rem 0 0.2rem;
       font-size: 1.2rem;
     }
-
     .doctor-info p {
       margin: 0.25rem 0;
       font-size: 0.95rem;
       line-height: 1.4;
     }
-
     .doctor-info strong {
       color: #000;
     }
@@ -158,25 +144,25 @@
       font-style: italic;
       margin-bottom: 0.5rem;
     }
-
-    .appointment-btn {
-      background-color: #1DA1F2;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 0.75rem 1rem;
-      margin: 1rem;
-      font-size: 0.95rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .appointment-btn:hover {
-      background-color: #0d8de6;
-    }
-
-    
+    .BookNow{
+        background-color:rgb(29, 155, 240);
+        color:white;
+        border:black;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:30px;
+        padding-left:30px;
+        border-radius:7px;
+        transition:box-shadow 0.2s,
+        background-color 0.2s;
+        margin-bottom: 15px;
+        margin-left:105px;
+        
+      }
+      .BookNow:hover{
+        box-shadow:3px 4px 5px rgba(0,0,0,0.3);
+        background-color: rgb(11, 137, 220);
+      }    
     @media (max-width: 1200px) {
       .doctor-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -196,6 +182,11 @@
 
       header {
         text-align: center;
+      }
+      .book-btn-container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
       }
 
       .search-bar {
@@ -218,24 +209,23 @@
   
   <header>
     <div class="left-section">
-      <div class="logo">Smart Health Care</div>
-      <nav>
-        <a href="home page.html" alt="home">
-          <button class="home-btn" onclick="home page.html">Home</button>
-        <a href="login.html" alt="login">
-          <button class="login-btn" onclick="login.html">Login</button>
-        </a>
-        <a href="#" alt="account">
-          <button class="account-btn" onclick="#">Account</button>
-        </a>
-      </nav>
+      <div class="logo">Smart Health Care
+        <div class="tagline">"Your Health, Our Priority."</div>
+      </div>
     </div>
 
     <div class="search-bar">
       <input type="text" placeholder="🔍 Search for doctor" />
     </div>
+        <div class="right-section">
+        <nav>
+          <a href="home page.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="#">Account</a>
+        </nav>
+    </div>
 
-    <div class="tagline">"Your Health, Our Priority."</div>
+    
   </header>
 
   
@@ -249,7 +239,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in General Medicine, DM in Neurology</p>
           <p><strong>Awards:</strong> Best Research Paper Award, Top Neurologist 2023</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -260,7 +252,9 @@
           <p><strong>Qualification:</strong> MBBS, MS in Orthopedics</p>
           <p><strong>Awards:</strong> Best Orthopedic Surgeon Award, Lifetime Achievement Award</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <div class="book-btn-container">
+          <a href="front.html"><button class="BookNow">Book an appointment</button></a>
+        </div>
       </div>
 
       <div class="doctor-card">
@@ -271,7 +265,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in General Medicine, DM in Cardiology</p>
           <p><strong>Awards:</strong> American Heart Association Award, Gold Medal in MBBS/MD Exams</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -282,7 +278,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in Pediatrics</p>
           <p><strong>Awards:</strong> Best Pediatric Care Award, Gold Medal in MBBS/MD Exams</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -293,7 +291,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in General Medicine, DM in Gastroenterology</p>
           <p><strong>Awards:</strong> Best Gastroenterology Paper Award, National Medical Award</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -304,7 +304,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in Dermatology</p>
           <p><strong>Awards:</strong> Skin Care Excellence Award, Best Dermatologist 2023</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -315,7 +317,9 @@
           <p><strong>Qualification:</strong> MBBS, MD in General Medicine, DM in Oncology</p>
           <p><strong>Awards:</strong> Cancer Research Excellence Award, Top Oncologist Award 2023</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
 
       <div class="doctor-card">
@@ -326,7 +330,9 @@
           <p><strong>Qualification:</strong> MBBS, MS in ENT</p>
           <p><strong>Awards:</strong> Best ENT Surgeon Award, National ENT Research Award</p>
         </div>
-        <button class="appointment-btn">Book an appointment</button>
+        <a href="front.html" alt="harsha">
+          <button class="BookNow" onclick="front.html">Book an appointment</button>
+        </a>
       </div>
     </div>
   </main>
